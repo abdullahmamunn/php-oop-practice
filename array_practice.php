@@ -351,6 +351,7 @@ array_combine() => The array_combine() function creates an array by using the el
                                         print_r($c);
                                     ?>
 explode() => The explode() function breaks a string into an array.
+implode() function returns a string from the elements of an array.
 max()
 min()
 count()
@@ -362,6 +363,11 @@ arsort()
 krsort()
 is_array()
 in_array()
+strlen()
+str_replace()
+strpos => Find the position of the first occurrence of a substring in a string
+file_exists => Checks whether a file or directory exists(path)
+
 
 
 
