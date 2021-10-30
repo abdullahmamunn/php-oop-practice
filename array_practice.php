@@ -303,19 +303,54 @@ foreach ($data as $key => $value) {
 $m = array(2,5,6,4,10);
 echo "Is it array ".is_array($m)."<br>";
 echo "Is it in array ".in_array(10,$m);
+echo "<br>";
+function checkEven($num)
+{
+  if($num%2==0)
+  {
+     return $num;
+  }  
+}
+
+$a=array(1,2,3,4,5,6,7,8,9,10);
+$even = array_map("checkEven",$a);
+for($i=0; $i<count($even); $i++)
+{
+  echo $even[$i]." ";
+}
+
 ?>
 
 
-array_push()
-array_pop()
-array_splice()
-array_values()
-unset()
-array_merge()
+array_push()    => push array value in the end of the array
+array_pop()     =>  pops and returns the value of the last element of array
+array_splice()  => Remove elements from an array and replace it with new elements:
+array_values()  => returns all the values from the array and indexes the array numerically
+unset()         => If you want to delete just one array element you can use unset(),Note that when you use unset() the array keys won’t change. 
+                   If you want to reindex the keys you can use \array_values() after unset(), which will convert all keys to numerically enumerated keys starting from 0.
+array_diff()    => If you know the values of the array elements which you want to delete, then you can use
+array_diff_key()=> If you know the keys of the elements which you want to delete, then you want to use
+array_merge()  => The array_merge() function merges one or more arrays into one array.
 array_merge_recursive()
-array_map()
-array_combine()
-explode()
+array_map() => The array_map() function sends each value of an array to a user-made function, and returns an array with new values, given by the 
+               user-made function. <?php
+                                        function myfunction($v)
+                                        {
+                                          return($v*$v);
+                                        }
+
+                                        $a=array(1,2,3,4,5);
+                                        print_r(array_map("myfunction",$a));
+                                    ?>
+array_combine() => The array_combine() function creates an array by using the elements from one "keys" array and one "values" array.
+                                    <?php
+                                        $fname=array("Peter","Ben","Joe");
+                                        $age=array("35","37","43");
+
+                                        $c=array_combine($fname,$age);
+                                        print_r($c);
+                                    ?>
+explode() => The explode() function breaks a string into an array.
 max()
 min()
 count()
@@ -357,16 +392,31 @@ in_array()
 rupjit 01305 213639
 redu 01318 475111
 khairul 01701 016078
+01865 768826
 
 
        Covid-19 treatment
   Dr. Atikur Rahman
   tab. lvera 12mg 1 0 1 => 3 days
-  tab. Zimax 500mg 0 0 1 => 7days
-  tab. monas 10mg 0 0 1 => 1month
-  tab. fexo 120mg 0 0 1 => 1month
-  tab. xinc 20mg  0 0 1 => 10days
-  tab  ceevit 250mg 1 0 1 => 10days
+  tab. Zimax 500mg 0 0 1 => 7 days
+  tab. monas 10mg 0 0 1 => 1 month
+  tab. fexo 120mg 0 0 1 => 1 month
+  tab. xinc 20mg  0 0 1 => 10 days
+  tab  ceevit 250mg 1 0 1 => 10 days
   cap. D rise 40000 IU per week 1 => 1 month
+
+
+1. করোনা ভাইরাস মানবদেহে প্রবেশ করে চোখ, নাক ও মুখ দিয়ে, যেহেতু সবাই পজিটিভ আপনি আর রেদুয়ান 
+অনেকটা রিকভার হয়ছেন তায়, আপনাদের উচিত, সাবান অথবা হেন্ডওয়াশ দিয়ে ১মিনিট ধরে হাত ধোয়া খাওয়ার আগে 
+এবং আব্বা আম্মার সাথে কোন কাজ করলে। আর আপনারা ২ জন (আপনি আর রেদুয়ান) এক রুম এ থাকেন এবং 
+এক ওয়াশরুম ব্যবহার করেন। 
+
+2. আব্বা আম্মার জন্য ও একই রোল মেনে চলতে হবে। *** very important
+
+3. ar basar vitore o mask use koren, jodi use na koren tahole recover hoye kono luv nai. jotokkhon na abba amma recover hoyche.
+4. ar protidin sokale poriman moto pani khete hobe ar saradin e minimum 10-12 glass pani khaben, sobai.
+5. ar baranda utane hatahati korben
+6 ar pet vore khete hobe jeta apnar energy dibe ebong immune system strong hobe ja.
+7. saradin kajer moddhe thaken, use kora kapor golo gorom pani diye dhoya suru kore den.
 
 
