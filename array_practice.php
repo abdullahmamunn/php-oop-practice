@@ -328,7 +328,7 @@ array_splice()  => Remove elements from an array and replace it with new element
 array_values()  => returns all the values from the array and indexes the array numerically
 unset()         => If you want to delete just one array element you can use unset(),Note that when you use unset() the array keys won’t change. 
                    If you want to reindex the keys you can use \array_values() after unset(), which will convert all keys to numerically enumerated keys starting from 0.
-array_diff()    => If you know the values of the array elements which you want to delete, then you can use
+array_diff()    => Compare the values of two arrays, and return the differences:
 array_diff_key()=> If you know the keys of the elements which you want to delete, then you want to use
 array_merge()  => The array_merge() function merges one or more arrays into one array.
 array_merge_recursive()
